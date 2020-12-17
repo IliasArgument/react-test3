@@ -12,7 +12,7 @@ function ItemList ({getData, renderItem, onItemSelected}) {
        .then((data) => {
            return setDate(data)
        })
-   },[]);
+   },[getData]);
 
 const renderItems = (arr) => {
 return arr.map((item)=> {
